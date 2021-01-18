@@ -1,0 +1,27 @@
+#数据库连接信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dingding?useSSL=false&serverTimezone=UTC&characterEncoding=utf-8&useUnicode=true
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#mybatis配置相关
+mybatis:
+  type-aliases-package: com.ruantong.dingding.*
+  # 绑定映射文件
+  mapper-locations: classpath:mapper/*.xml
+  #驼峰命名规则
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+#my.corpid=dinge9c9df3e73479fe235c2f4657eb6378f
+#my.app_key=dinguepbtcsr2irrjtba
+#my.app_secret=y6u94DLtcdcyHApB6IZUO4D0PzkfrcTWF4ICy0elJNWO5czBF_TFuD9b214jKHjE
+#my.agent_id=812115104
+#my.domain=http://122.51.151.6
+##my.chat_id=chat227956d471b69962f8daf4989986f9a0
+#my.chat_id=chatc7e04c6e3e69cfe2d5b3328a7c5df9cf
