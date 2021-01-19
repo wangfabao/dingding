@@ -107,7 +107,7 @@ public class VoteController {
             return new AjaxMessage(true,votingResultStatisticsVO);
         } catch (Exception e) {
             e.printStackTrace();
-            return new AjaxMessage(false,"投票结果统计失败");
+            return new AjaxMessage(false,"投票结果统计失败。");
         }
 
     }
